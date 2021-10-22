@@ -2,9 +2,9 @@
   "name": "examples",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
+    "dev": "svelte-kit dev --port 5000",
     "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
+    "preview": "svelte-kit preview --port 5050",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint --ignore-path .gitignore ."
