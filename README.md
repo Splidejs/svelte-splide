@@ -45,5 +45,5 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 ```
 
 ## License
-React Splide and Splide are released under the MIT license.
+Svelte Splide and Splide are released under the MIT license.
 © 2021 Naotoshi Fujita
