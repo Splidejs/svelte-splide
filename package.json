@@ -1,10 +1,27 @@
 {
   "name": "@splidejs/svelte-splide",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "keywords": [
+    "splide",
+    "slider",
+    "carousel",
+    "slideshow",
+    "lightweight",
+    "touch",
+    "responsive",
+    "svelte"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Splidejs/svelte-splide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Splidejs/svelte-splide/issues"
+  },
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "pack": "svelte-kit package",
+    "package": "svelte-kit package",
     "preview": "svelte-kit preview --port 3030",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",

@@ -1,0 +1,12 @@
+<svg width="200" height="200" viewBox="0 0 52.9 52.9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="logo-a">
+   <stop stop-color="#c0e900" offset="0"/>
+   <stop stop-color="#00c3f3" offset="1"/>
+  </linearGradient>
+  <linearGradient id="logo-c" x1="-17.6" x2="-39" y1="125" y2="125" gradientTransform="matrix(-.943 0 0 -.943 -10.5 144)" gradientUnits="userSpaceOnUse" xlink:href="#logo-a"/>
+  <linearGradient id="logo-b" x1="-42.4" x2="-11.2" y1="125" y2="125" gradientTransform="matrix(.943 0 0 .943 63.4 -91.5)" gradientUnits="userSpaceOnUse" xlink:href="#logo-a"/>
+ </defs>
+ <path d="m8.82 17.6 26.5 26.5-8.82 8.82-26.5-26.5zm-8.82 8.82 26.5-26.5 8.82 8.82-26.5 26.5z" fill="url(#logo-c)"/>
+ <path d="m44.1 35.3-26.5-26.5 8.82-8.82 26.5 26.5zm8.82-8.82-26.5 26.5-8.82-8.82 26.5-26.5z" fill="url(#logo-b)"/>
+</svg>
