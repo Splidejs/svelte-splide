@@ -22,8 +22,8 @@
 
 	<Splide
 		options={ options }
-		on:splideMounted={ e => console.log( e.detail.splide.length ) }
-		on:splideMove={ e => console.log( 'move to', e.detail.index ) }
+		on:mounted={ e => console.log( e.detail.splide.length ) }
+		on:move={ e => console.log( 'move to', e.detail.index ) }
 	>
 		{ #each slides as slide }
 			<SplideSlide>

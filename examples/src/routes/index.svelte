@@ -1,11 +1,11 @@
 <script lang="ts">
+  import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
   import AutoplayExample from './components/AutoplayExample.svelte';
   import BasicExample from './components/BasicExample.svelte';
   import DynamicSlidesExample from './components/DynamicSlidesExample.svelte';
   import ReactivityExample from './components/ReactivityExample.svelte';
   import ThumbnailsExample from './components/ThumbnailsExample.svelte';
   import VideoExample from './components/VideoExample.svelte';
-  import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 </script>
 
 <main>

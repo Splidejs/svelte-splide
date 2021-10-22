@@ -46,9 +46,17 @@ const EVENTS_WITHOUT_ARGS: Array<keyof EventMap> = [
   EVENT_AUTOPLAY_PAUSE,
 ];
 
-export function bind( node: HTMLElement, splide: Splide ): void {
-  const dispatch = ( event: keyof EventMap, detail: any = {} ) => {
-    node.dispatchEvent( new CustomEvent( `splide${ transform( event ) }`, { detail: { splide, ...detail } } ) );
+/**
+ * Binds Splide events to the svelte dispatcher.
+ *
+ * @since 0.1.0
+ *
+ * @param splide     - A splide instance.
+ * @param dispatchFn - A dispatch function created by `createEventDispatcher()`.
+ */
+export function bind<T extends ( ...args: any[] ) => any>( splide: Splide, dispatchFn: T ): void {
+  const dispatch = ( event: keyof EventMap, detail: Record<string, unknown> = {} ) => {
+    dispatchFn( transform( event ), { splide, ...detail } );
   };
 
   splide.on( EVENT_CLICK, ( Slide: SlideComponent, e: MouseEvent ) => {
@@ -118,10 +126,20 @@ export function bind( node: HTMLElement, splide: Splide ): void {
   } );
 }
 
-
+/**
+ * Transforms Splide event names to the camel case.
+ *
+ * @since 0.1.0
+ *
+ * @param event - An event name to transform.
+ *
+ * @return A transformed event name.
+ */
 function transform( event: keyof EventMap ): string {
   return event.split( ':' )
-    .map( fragment => fragment.charAt( 0 ).toUpperCase() + fragment.slice( 1 ) )
+    .map( ( fragment, index ) => {
+      return index > 0 ? fragment.charAt( 0 ).toUpperCase() + fragment.slice( 1 ) : fragment;
+    } )
     .join( '' )
     .replace( 'Lazyload', 'LazyLoad' );
 }
