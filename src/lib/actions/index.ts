@@ -1,0 +1,1 @@
+export { useSplide } from './useSplide/useSplide';
