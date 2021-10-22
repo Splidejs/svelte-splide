@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/svelte-splide/_app/start-1fefc01a.js">
+		<link rel="modulepreload" href="/svelte-splide/_app/chunks/vendor-8b8f70f9.js">
+		<link rel="modulepreload" href="/svelte-splide/_app/layout.svelte-9cb95484.js">
+		<link rel="modulepreload" href="/svelte-splide/_app/pages/components/DynamicSlidesExample.svelte-82fe871b.js">
+		<link rel="modulepreload" href="/svelte-splide/_app/chunks/generateSlides-2c575ba3.js">
+		<link rel="stylesheet" href="/svelte-splide/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/svelte-splide/_app/assets/pages/components/DynamicSlidesExample.svelte-7f3ecd3d.css">
+
+		<script type="module">
+			import { start } from "/svelte-splide/_app/start-1fefc01a.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"/svelte-splide","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/svelte-splide/_app/layout.svelte-9cb95484.js"),
+						import("/svelte-splide/_app/pages/components/DynamicSlidesExample.svelte-82fe871b.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fcomponents\u002FDynamicSlidesExample",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<div class="wrapper svelte-97q80u"><h2>Dynamic Slides</h2>
+
+	
+
+<div class="splide splide--dynamic">
+
+	<div class="splide__slider">
+
+			<div class="splide__track"><ul class="splide__list"><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=0" alt="Image 0">
+			</li></ul></div>
+
+			</div>
+
+	</div>
+
+	<div class="controls"><button>Add</button>
+		<button>Remove</button></div>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>
