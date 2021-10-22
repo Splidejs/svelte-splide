@@ -1,6 +1,7 @@
 {
   "name": "@splidejs/svelte-splide",
   "version": "0.1.0",
+  "description": "Svelte component for the Splide slider/carousel.",
   "keywords": [
     "splide",
     "slider",
