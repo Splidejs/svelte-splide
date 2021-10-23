@@ -1,9 +1,9 @@
 <div align="center">
   <a href="https://splidejs.com">
-      <img width="80" src="images/logo.svg">
+      <img width="70" src="images/logo.svg">
   </a>
   <a href="https://svelte.dev/">
-      <img width="80" src="images/svelte-logo.svg">
+      <img width="70" src="images/svelte-logo.svg">
   </a>
 
   <h1>Svelte Splide</h1>
