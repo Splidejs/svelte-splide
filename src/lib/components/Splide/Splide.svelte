@@ -8,6 +8,11 @@
 
 
   /**
+   * The ID for the slider root element.
+   */
+  export let id: string | undefined;
+
+  /**
    * Splide options. Do not change readonly options after mount.
    */
   export let options: Options = {};
@@ -153,7 +158,8 @@
 <svelte:options accessors/>
 
 <div
-  class={ `splide ${ $$props.class }` }
+  { id }
+  class={ `splide ${ $$props.class || '' }`.trim() }
   bind:this={ root }
 >
   { #if hasSliderWrapper }
