@@ -41,7 +41,7 @@
    * A dispatcher function.
    * The `createEventDispatcher` type assertion does not accept a type alias.
    * If specified, the svelte kit fails to generate a type of `events` and it will be `CustomEvent<any>`.
-   * Also, the svelte action does not provided the way to specify event types.
+   * Also, the svelte action does not provide the way to specify event types.
    */
   const dispatch = createEventDispatcher<{
     mounted: EventDetail;
