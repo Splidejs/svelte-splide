@@ -89,7 +89,7 @@
   let prevOptions = merge( {}, options );
 
   /**
-   * Updates splide options only when is has difference with the previous one.
+   * Updates splide options only when they have difference with previous options.
    */
   $: if ( splide && ! isEqualDeep( prevOptions, options ) ) {
     splide.options = options;
