@@ -10,7 +10,7 @@
   /**
    * The ID for the slider root element.
    */
-  export let id: string | undefined;
+  export let id: string | undefined = undefined;
 
   /**
    * Splide options. Do not change readonly options after mount.
