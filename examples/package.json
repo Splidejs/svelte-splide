@@ -10,6 +10,7 @@
     "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.21",
     "@sveltejs/kit": "next",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
@@ -24,6 +25,6 @@
   "type": "module",
   "dependencies": {
     "@splidejs/splide-extension-video": "^0.5.6",
-    "@splidejs/svelte-splide": "file:../package"
+    "@splidejs/svelte-splide": "^0.1.0"
   }
 }
