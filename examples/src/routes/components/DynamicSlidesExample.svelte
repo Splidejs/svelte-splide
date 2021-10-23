@@ -22,24 +22,24 @@
 </script>
 
 <div class="wrapper">
-	<h2>Dynamic Slides</h2>
+  <h2>Dynamic Slides</h2>
 
-	<Splide class="splide--dynamic" options={ options } hasSliderWrapper>
-		{ #each slides as slide }
-			<SplideSlide>
-				<img src={ slide.src } alt={ slide.alt }>
-			</SplideSlide>
-		{ /each }
-	</Splide>
+  <Splide class="splide--dynamic" options={ options } hasSliderWrapper>
+    { #each slides as slide }
+      <SplideSlide>
+        <img src={ slide.src } alt={ slide.alt }>
+      </SplideSlide>
+    { /each }
+  </Splide>
 
-	<div class="controls">
-		<button on:click={ add }>Add</button>
-		<button on:click={ remove }>Remove</button>
-	</div>
+  <div class="controls">
+    <button on:click={ add }>Add</button>
+    <button on:click={ remove }>Remove</button>
+  </div>
 </div>
 
 <style>
-	.wrapper :global( .splide__list ){
-		min-height: 15rem;
-	}
+  .wrapper :global( .splide__list ) {
+    min-height: 15rem;
+  }
 </style>

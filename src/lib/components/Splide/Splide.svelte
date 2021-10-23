@@ -153,38 +153,38 @@
 <svelte:options accessors/>
 
 <div
-	class={ `splide ${ $$props.class }` }
-	bind:this={ root }
+  class={ `splide ${ $$props.class }` }
+  bind:this={ root }
 >
-	{ #if hasSliderWrapper }
-		<slot name="before-slider"/>
-	{ /if }
+  { #if hasSliderWrapper }
+    <slot name="before-slider"/>
+  { /if  }
 
-	{ #if hasSliderWrapper }
-		<div class="splide__slider">
-			<slot name="before-track"/>
+  { #if hasSliderWrapper }
+    <div class="splide__slider">
+      <slot name="before-track"/>
 
-			<div class="splide__track">
-				<ul class="splide__list">
-					<slot/>
-				</ul>
-			</div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <slot/>
+        </ul>
+      </div>
 
-			<slot name="after-track"/>
-		</div>
-	{ :else }
-		<slot name="before-track"/>
+      <slot name="after-track"/>
+    </div>
+  { :else }
+    <slot name="before-track"/>
 
-		<div class="splide__track">
-			<ul class="splide__list">
-				<slot/>
-			</ul>
-		</div>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <slot/>
+      </ul>
+    </div>
 
-		<slot name="after-track"/>
-	{ /if }
+    <slot name="after-track"/>
+  { /if  }
 
-	{ #if hasSliderWrapper }
-		<slot name="after-slider"/>
-	{ /if }
+  { #if hasSliderWrapper }
+    <slot name="after-slider"/>
+  { /if  }
 </div>

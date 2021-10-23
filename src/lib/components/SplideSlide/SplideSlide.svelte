@@ -3,5 +3,5 @@
 </script>
 
 <li class="splide__slide" { ...$$props }>
-	<slot />
+  <slot/>
 </li>

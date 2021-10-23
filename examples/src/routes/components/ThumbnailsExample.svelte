@@ -4,8 +4,8 @@
   import { onMount } from 'svelte';
   import { generateSlides } from '../../utils';
 
-  let main: any;
-  let thumbs: any;
+  let main: Splide;
+  let thumbs: SplideSlide;
 
   const slides = generateSlides();
 

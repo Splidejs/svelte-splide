@@ -9,17 +9,17 @@
 </script>
 
 <main>
-	<BasicExample />
-	<hr>
-	<AutoplayExample />
-	<hr>
-	<ReactivityExample />
-	<hr>
-	<DynamicSlidesExample />
-	<hr>
-	<ThumbnailsExample />
-	<hr>
-	<VideoExample />
+  <BasicExample/>
+  <hr>
+  <AutoplayExample/>
+  <hr>
+  <ReactivityExample/>
+  <hr>
+  <DynamicSlidesExample/>
+  <hr>
+  <ThumbnailsExample/>
+  <hr>
+  <VideoExample/>
 </main>
 
 <style global>

@@ -7,16 +7,16 @@
 </script>
 
 <div class="wrapper">
-	<h2>Basic</h2>
+  <h2>Basic</h2>
 
-	<Splide options={ { rewind: true, heightRatio: 0.5625 } } extensions={ { Video } }>
-		{ #each videos as id, index }
-			<SplideSlide data-splide-youtube={ id }>
-				<img
-					src={ `https://i3.ytimg.com/vi/${ id }/maxresdefault.jpg` }
-					alt={ `YouTube Sample ${ index + 1 }` }
-				>
-			</SplideSlide>
-		{ /each }
-	</Splide>
+  <Splide options={ { rewind: true, heightRatio: 0.5625 } } extensions={ { Video } }>
+    { #each videos as id, index }
+      <SplideSlide data-splide-youtube={ id }>
+        <img
+          src={ `https://i3.ytimg.com/vi/${ id }/maxresdefault.jpg` }
+          alt={ `YouTube Sample ${ index + 1 }` }
+        >
+      </SplideSlide>
+    { /each }
+  </Splide>
 </div>
