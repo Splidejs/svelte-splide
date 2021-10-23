@@ -39,21 +39,21 @@
 </script>
 
 <div class="wrapper">
-	<h2>Thumbnails</h2>
+  <h2>Thumbnails</h2>
 
-	<Splide options={ mainOptions } bind:this={ main }>
-		{ #each slides as slide }
-			<SplideSlide>
-				<img src={ slide.src } alt={ slide.alt }>
-			</SplideSlide>
-		{ /each }
-	</Splide>
+  <Splide options={ mainOptions } bind:this={ main }>
+    { #each slides as slide }
+      <SplideSlide>
+        <img src={ slide.src } alt={ slide.alt }>
+      </SplideSlide>
+    { /each }
+  </Splide>
 
-	<Splide options={ thumbsOptions } bind:this={ thumbs }>
-		{ #each slides as slide }
-			<SplideSlide>
-				<img src={ slide.src } alt={ slide.alt }>
-			</SplideSlide>
-		{ /each }
-	</Splide>
+  <Splide options={ thumbsOptions } bind:this={ thumbs }>
+    { #each slides as slide }
+      <SplideSlide>
+        <img src={ slide.src } alt={ slide.alt }>
+      </SplideSlide>
+    { /each }
+  </Splide>
 </div>
