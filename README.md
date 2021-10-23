@@ -14,6 +14,8 @@
   </p>
 
   <p>
+    <a href="https://splidejs.com/integration/svelte-splide">Getting Started</a>
+    <br>
     <a href="https://splidejs.com/">Demo</a>
     <br>
     <a href="https://github.com/Splidejs/splide/discussions">Discussions</a>
@@ -43,6 +45,8 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css';
   </SplideSlide>
 </Splide>
 ```
+
+Visit [this page](https://splidejs.com/integration/svelte-splide) for more details.
 
 ## License
 Svelte Splide and Splide are released under the MIT license.
