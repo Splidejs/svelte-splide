@@ -25,14 +25,14 @@
 ## Quick Start
 Get the latest version from NPM:
 ```
-$ npm install @splidejs/svelte-splide
+$ npm install @splidejs/splide @splidejs/svelte-splide
 ```
 
 Import CSS and components:
 
 ```svelte
 <script>
-import { Splide, SplideSlide } from '@splidejs/svelte-slide';
+import { Splide, SplideSlide } from "@splidejs/svelte-splide";
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 </script>
 
