@@ -1,6 +1,6 @@
 {
   "name": "@splidejs/svelte-splide",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Svelte component for the Splide slider/carousel.",
   "author": "Naotoshi Fujita",
   "license": "MIT",
@@ -49,6 +49,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@splidejs/splide": "^3.2.2"
+    "@splidejs/splide": "^3.2.7"
   }
 }

@@ -122,9 +122,7 @@
    * @param control - A control pattern.
    */
   export function go( control: number | string ): void {
-    if ( splide ) {
-      splide.go( control );
-    }
+    splide?.go( control );
   }
 
   /**
@@ -133,23 +131,7 @@
    * @param target - A target splide instance to sync with.
    */
   export function sync( target: Splide ): void {
-    if ( splide ) {
-      splide.sync( target );
-      remount( splide );
-      remount( target );
-    }
-  }
-
-  /**
-   * Remounts the target splide instance.
-   *
-   * @private
-   *
-   * @param target - A splide instance to remount.
-   */
-  function remount( target: Splide ): void {
-    target.destroy( false );
-    target.mount();
+    splide?.sync( target );
   }
 
   /* eslint-disable no-undef */
