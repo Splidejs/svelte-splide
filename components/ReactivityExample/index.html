@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/svelte-splide/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/svelte-splide/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
 
 		
 
-		<link rel="modulepreload" href="/svelte-splide/app/start-0dccc629.js">
-		<link rel="modulepreload" href="/svelte-splide/app/chunks/vendor-8b8f70f9.js">
-		<link rel="modulepreload" href="/svelte-splide/app/layout.svelte-9cb95484.js">
-		<link rel="modulepreload" href="/svelte-splide/app/pages/components/ReactivityExample.svelte-5d4f2b72.js">
+		<link rel="modulepreload" href="/svelte-splide/app/start-285625b3.js">
+		<link rel="modulepreload" href="/svelte-splide/app/chunks/vendor-cdeceb07.js">
+		<link rel="modulepreload" href="/svelte-splide/app/layout.svelte-ff79283f.js">
+		<link rel="modulepreload" href="/svelte-splide/app/pages/components/ReactivityExample.svelte-8c4b4e52.js">
+		<link rel="modulepreload" href="/svelte-splide/app/chunks/SplideSlide-013cd6ce.js">
 		<link rel="modulepreload" href="/svelte-splide/app/chunks/generateSlides-2c575ba3.js">
 		<link rel="stylesheet" href="/svelte-splide/app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/svelte-splide/app/assets/pages/components/ReactivityExample.svelte-c93517bb.css">
 
 		<script type="module">
-			import { start } from "/svelte-splide/app/start-0dccc629.js";
+			import { start } from "/svelte-splide/app/start-285625b3.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/svelte-splide","assets":""},
@@ -30,8 +31,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/svelte-splide/app/layout.svelte-9cb95484.js"),
-						import("/svelte-splide/app/pages/components/ReactivityExample.svelte-5d4f2b72.js")
+						import("/svelte-splide/app/layout.svelte-ff79283f.js"),
+						import("/svelte-splide/app/pages/components/ReactivityExample.svelte-8c4b4e52.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -42,52 +43,52 @@
 				}
 			});
 		</script>
-	</head>
-	<body>
-		<div id="svelte">
+  </head>
+  <body>
+    <div id="svelte">
 
 
 <div class="wrapper"><h2>Reactivity Example</h2>
 
-	<div style="margin-bottom: 1rem"><label class="svelte-vwdbkg"><span class="svelte-vwdbkg">gap:</span>
-			<input type="number" min="0" max="20" class="svelte-vwdbkg" value="0">
-			px
-		</label>
+  <div style="margin-bottom: 1rem"><label class="svelte-vwdbkg"><span class="svelte-vwdbkg">gap:</span>
+      <input type="number" min="0" max="20" class="svelte-vwdbkg" value="0">
+      px
+    </label>
 
-		<label class="svelte-vwdbkg"><span class="svelte-vwdbkg">perPage:</span>
-			<input type="number" min="1" max="5" class="svelte-vwdbkg" value="2"></label>
+    <label class="svelte-vwdbkg"><span class="svelte-vwdbkg">perPage:</span>
+      <input type="number" min="1" max="5" class="svelte-vwdbkg" value="2"></label>
 
-		<label class="svelte-vwdbkg"><span class="svelte-vwdbkg">height:</span>
-			<input type="number" min="5" max="20" value="10" class="svelte-vwdbkg">
-			rem
-		</label></div>
+    <label class="svelte-vwdbkg"><span class="svelte-vwdbkg">height:</span>
+      <input type="number" min="5" max="20" value="10" class="svelte-vwdbkg">
+      rem
+    </label></div>
 
-	
+  
 
-<div class="splide undefined">
+<div class="splide">
 
-	
+  
 
-		<div class="splide__track"><ul class="splide__list"><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=0" alt="Image 0">
-			</li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=1" alt="Image 1">
-			</li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=2" alt="Image 2">
-			</li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=3" alt="Image 3">
-			</li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=4" alt="Image 4">
-			</li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=5" alt="Image 5">
-			</li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=6" alt="Image 6">
-			</li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=7" alt="Image 7">
-			</li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=8" alt="Image 8">
-			</li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=9" alt="Image 9">
-			</li></ul></div>
+    <div class="splide__track"><ul class="splide__list"><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=0" alt="Image 0">
+      </li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=1" alt="Image 1">
+      </li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=2" alt="Image 2">
+      </li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=3" alt="Image 3">
+      </li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=4" alt="Image 4">
+      </li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=5" alt="Image 5">
+      </li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=6" alt="Image 6">
+      </li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=7" alt="Image 7">
+      </li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=8" alt="Image 8">
+      </li><li class="splide__slide"><img src="https://source.unsplash.com/random/800x450?sig=9" alt="Image 9">
+      </li></ul></div>
 
-		
+    
 
-	</div>
+  </div>
 </div>
 
 
 
 			
 		</div>
-	</body>
+  </body>
 </html>
