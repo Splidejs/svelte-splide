@@ -133,8 +133,6 @@
   export function sync( target: Splide ): void {
     splide?.sync( target );
   }
-
-  /* eslint-disable no-undef */
 </script>
 
 <svelte:options accessors/>
