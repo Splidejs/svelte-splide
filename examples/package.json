@@ -24,7 +24,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@splidejs/splide-extension-video": "^0.5.12",
+    "@splidejs/splide-extension-video": "^0.5.13",
     "@splidejs/svelte-splide": "file:../package"
   }
 }
