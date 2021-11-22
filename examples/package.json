@@ -12,19 +12,19 @@
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.21",
     "@sveltejs/kit": "next",
-    "@typescript-eslint/eslint-plugin": "^4.31.1",
-    "@typescript-eslint/parser": "^4.31.1",
-    "eslint": "^7.32.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
-    "svelte": "^3.42.6",
-    "svelte-check": "^2.2.6",
-    "svelte-preprocess": "^4.9.4",
+    "svelte": "^3.44.2",
+    "svelte-check": "^2.2.10",
+    "svelte-preprocess": "^4.9.8",
     "tslib": "^2.3.1",
-    "typescript": "^4.4.3"
+    "typescript": "^4.5.2"
   },
   "type": "module",
   "dependencies": {
-    "@splidejs/splide-extension-video": "^0.5.14",
+    "@splidejs/splide-extension-video": "^0.6.1",
     "@splidejs/svelte-splide": "file:../package"
   }
 }
