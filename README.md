@@ -48,6 +48,13 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 Visit [this page](https://splidejs.com/integration/svelte-splide) for more details.
 
+
+## Support Splide
+
+Please support the project if you like it!
+- [GitHub Sponsors](https://github.com/sponsors/NaotoshiFujita)
+
+
 ## License
 Svelte Splide and Splide are released under the MIT license.
 © 2021 Naotoshi Fujita
