@@ -1,10 +1,9 @@
 <script lang="ts">
-  import type { Options } from '@splidejs/splide';
   import { Splide, SplideSlide } from '@splidejs/svelte-splide';
   import { generateSlides } from '../../utils';
 
   const slides = generateSlides();
-  const options: Options = {
+  const options = {
     rewind : true,
     perPage: 2,
     gap    : '1rem',

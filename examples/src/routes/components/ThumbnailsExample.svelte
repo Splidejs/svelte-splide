@@ -1,5 +1,4 @@
 <script lang="ts">
-  import type { Options } from '@splidejs/splide';
   import { Splide, SplideSlide } from '@splidejs/svelte-splide';
   import { onMount } from 'svelte';
   import { generateSlides } from '../../utils';
@@ -9,7 +8,7 @@
 
   const slides = generateSlides();
 
-  const mainOptions: Options = {
+  const mainOptions = {
     type      : 'loop',
     perPage   : 2,
     perMove   : 1,
@@ -18,7 +17,7 @@
     height    : '10rem',
   };
 
-  const thumbsOptions: Options = {
+  const thumbsOptions = {
     type        : 'slide',
     rewind      : true,
     gap         : '1rem',
@@ -26,7 +25,7 @@
     fixedWidth  : 110,
     fixedHeight : 70,
     cover       : true,
-    focus       : 'center',
+    focus       : 'center' as const,
     isNavigation: true,
     updateOnMove: true,
   };

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
+  import '@splidejs/splide/css';
   import AutoplayExample from './components/AutoplayExample.svelte';
   import BasicExample from './components/BasicExample.svelte';
   import DynamicSlidesExample from './components/DynamicSlidesExample.svelte';

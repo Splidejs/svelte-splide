@@ -1,12 +1,11 @@
 <script lang="ts">
-  import type { Options } from '@splidejs/splide';
   import { Splide, SplideSlide } from '@splidejs/svelte-splide';
   import { generateSlides } from '../../utils';
 
   const slides = generateSlides();
 
   // Do not change readonly options later, such as `type`, `preloadPages`, etc.
-  const options: Options = {
+  const options = {
     perPage: 2,
     gap    : 0,
     height : '10rem',

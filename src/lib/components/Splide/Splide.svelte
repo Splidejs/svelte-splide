@@ -5,12 +5,15 @@
   import { Splide } from '@splidejs/splide';
   import { afterUpdate, createEventDispatcher, onMount } from 'svelte';
   import { bind } from './bind';
+  import { SplideTrack } from '$lib/components';
 
 
   /**
    * The ID for the slider root element.
    */
-  export let id: string | undefined = undefined;
+  // export let id: string | undefined = undefined;
+  let className: string | undefined = undefined;
+  export { className as class };
 
   /**
    * Splide options. Do not change readonly options after mount.
@@ -33,9 +36,9 @@
   export let transition: ComponentConstructor | undefined = undefined;
 
   /**
-   * Determines whether to wrap the track by the slider element or not.
+   * Determines whether to render a track element or not.
    */
-  export let hasSliderWrapper = false;
+  export let hasTrack = true;
 
   /**
    * A dispatcher function.
@@ -138,39 +141,15 @@
 <svelte:options accessors/>
 
 <div
-  { id }
-  class={ `splide ${ $$props.class || '' }`.trim() }
+  class={ `splide ${ className || '' }`.trim() }
   bind:this={ root }
+  { ...$$restProps }
 >
-  { #if hasSliderWrapper }
-    <slot name="before-slider"/>
-  { /if  }
-
-  { #if hasSliderWrapper }
-    <div class="splide__slider">
-      <slot name="before-track"/>
-
-      <div class="splide__track">
-        <ul class="splide__list">
-          <slot/>
-        </ul>
-      </div>
-
-      <slot name="after-track"/>
-    </div>
+  { #if hasTrack }
+    <SplideTrack>
+      <slot/>
+    </SplideTrack>
   { :else }
-    <slot name="before-track"/>
-
-    <div class="splide__track">
-      <ul class="splide__list">
-        <slot/>
-      </ul>
-    </div>
-
-    <slot name="after-track"/>
-  { /if  }
-
-  { #if hasSliderWrapper }
-    <slot name="after-slider"/>
+    <slot/>
   { /if  }
 </div>
