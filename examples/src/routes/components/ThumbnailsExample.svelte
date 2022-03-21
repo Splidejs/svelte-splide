@@ -38,9 +38,9 @@
 </script>
 
 <div class="wrapper">
-  <h2>Thumbnails</h2>
+  <h2 id="thumbnails-example-heading">Thumbnails</h2>
 
-  <Splide options={ mainOptions } bind:this={ main }>
+  <Splide options={ mainOptions } bind:this={ main } aria-labelledby="thumbnails-example-heading">
     { #each slides as slide }
       <SplideSlide>
         <img src={ slide.src } alt={ slide.alt }>

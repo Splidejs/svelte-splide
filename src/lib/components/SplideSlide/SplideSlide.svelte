@@ -1,7 +1,11 @@
 <script lang="ts">
-  /* eslint-disable no-undef */
+  import { classNames } from '$lib/utils';
+
+
+  let className: string | undefined = undefined;
+  export { className as class };
 </script>
 
-<li class="splide__slide" { ...$$props }>
+<li class={ classNames( 'splide__slide', className ) } { ...$$restProps }>
   <slot/>
 </li>

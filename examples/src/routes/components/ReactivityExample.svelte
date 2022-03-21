@@ -18,7 +18,7 @@
 </script>
 
 <div class="wrapper">
-  <h2>Reactivity Example</h2>
+  <h2 id="reactivity-example-heading">Reactivity Example</h2>
 
   <div style="margin-bottom: 1rem">
     <label>
@@ -45,7 +45,7 @@
     </label>
   </div>
 
-  <Splide options={ options }>
+  <Splide options={ options } aria-labelledby="reactivity-example-heading">
     { #each slides as slide }
       <SplideSlide>
         <img src={ slide.src } alt={ slide.alt }>

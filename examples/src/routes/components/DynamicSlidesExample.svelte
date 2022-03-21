@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Splide, SplideSlide } from '@splidejs/svelte-splide';
+  import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
   import { generateSlides } from '../../utils';
 
   let slides = generateSlides( 1 );
@@ -21,24 +21,27 @@
 </script>
 
 <div class="wrapper">
-  <h2>Dynamic Slides</h2>
+  <h2 id="dynamic-slides-example-heading">Dynamic Slides</h2>
 
-  <Splide class="splide--dynamic" options={ options } hasSliderWrapper>
-    { #each slides as slide }
-      <SplideSlide>
-        <img src={ slide.src } alt={ slide.alt }>
-      </SplideSlide>
-    { /each }
+  <Splide
+    class="splide--dynamic"
+    options={ options }
+    aria-labelledby="dynamic-slides-example-heading"
+    hasTrack={ false }
+  >
+    <div style="position: relative">
+      <SplideTrack style="min-height: 15rem">
+        { #each slides as slide }
+          <SplideSlide>
+            <img src={ slide.src } alt={ slide.alt }>
+          </SplideSlide>
+        { /each }
+      </SplideTrack>
+    </div>
+
+    <div class="controls">
+      <button on:click={ add }>Add</button>
+      <button on:click={ remove }>Remove</button>
+    </div>
   </Splide>
-
-  <div class="controls">
-    <button on:click={ add }>Add</button>
-    <button on:click={ remove }>Remove</button>
-  </div>
 </div>
-
-<style>
-  .wrapper :global( .splide__list ) {
-    min-height: 15rem;
-  }
-</style>

@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { ArrowsEventDetail, EventDetail, MoveEventDetail, SlideEventDetail } from '$lib/types';
-  import { getSlides, isEqualDeep, isEqualShallow, merge } from '$lib/utils';
+  import { classNames, getSlides, isEqualDeep, isEqualShallow, merge } from '$lib/utils';
   import type { ComponentConstructor, Options, PaginationData, PaginationItem, SlideComponent } from '@splidejs/splide';
   import { Splide } from '@splidejs/splide';
   import { afterUpdate, createEventDispatcher, onMount } from 'svelte';
@@ -9,9 +9,8 @@
 
 
   /**
-   * The ID for the slider root element.
+   * The class name for the root element.
    */
-  // export let id: string | undefined = undefined;
   let className: string | undefined = undefined;
   export { className as class };
 
@@ -141,7 +140,7 @@
 <svelte:options accessors/>
 
 <div
-  class={ `splide ${ className || '' }`.trim() }
+  class={ classNames( 'splide', className ) }
   bind:this={ root }
   { ...$$restProps }
 >

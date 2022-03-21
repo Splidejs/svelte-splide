@@ -17,12 +17,14 @@
 </script>
 
 <div class="wrapper">
-  <h2>Basic</h2>
+  <h2 id="basic-example-heading">Basic</h2>
 
   <Splide
     options={ options }
     on:mounted={ e => console.log( e.detail.splide.length ) }
     on:move={ e => console.log( 'move to', e.detail.index ) }
+    aria-labelledby="basic-example-heading"
+    class="custom-class"
   >
     { #each slides as slide }
       <SplideSlide>

@@ -4,19 +4,18 @@
 
   const slides = generateSlides();
   const options = {
-    rewind      : true,
-    gap         : '1rem',
-    autoplay    : true,
-    pauseOnHover: false,
-    arrows      : true,
-    height      : '15rem',
+    rewind  : true,
+    gap     : '1rem',
+    autoplay: true,
+    arrows  : true,
+    height  : '15rem',
   }
 </script>
 
 <div class="wrapper">
-  <h2>Autoplay</h2>
+  <h2 id="autoplay-example-heading">Autoplay</h2>
 
-  <Splide options={ options } hasTrack={ false }>
+  <Splide options={ options } hasTrack={ false } aria-labelledby="autoplay-example-heading">
     <div style="position: relative">
       <SplideTrack>
         { #each slides as slide }

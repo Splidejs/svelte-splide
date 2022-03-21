@@ -7,9 +7,13 @@
 </script>
 
 <div class="wrapper">
-  <h2>Basic</h2>
+  <h2 id="video-example-heading">Video</h2>
 
-  <Splide options={ { rewind: true, heightRatio: 0.5625 } } extensions={ { Video } }>
+  <Splide
+    options={ { rewind: true, heightRatio: 0.5625 } }
+    extensions={ { Video } }
+    aria-labelledby="video-example-heading"
+  >
     { #each videos as id, index }
       <SplideSlide data-splide-youtube={ id }>
         <img
