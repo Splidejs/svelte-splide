@@ -7,8 +7,10 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
-    target: '#svelte',
     adapter: adapter(),
+    prerender: {
+      default: true,
+    },
   },
 };
 

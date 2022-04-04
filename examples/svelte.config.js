@@ -10,11 +10,13 @@ const config = {
   kit: {
     floc   : true,
     appDir : 'app',
-    target : '#svelte',
     adapter: adapter(),
     paths  : {
       base: dev ? '' : '/svelte-splide',
-    }
+    },
+    prerender: {
+      default: true,
+    },
   },
 };
 
