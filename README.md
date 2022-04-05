@@ -33,10 +33,10 @@ Import CSS and components:
 ```svelte
 <script>
 import { Splide, SplideSlide } from '@splidejs/svelte-splide';
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+import '@splidejs/svelte-splide/css';
 </script>
 
-<Splide options={ { rewind: true } }>
+<Splide options={ { rewind: true } } aria-label="Svelte Splide Example">
   <SplideSlide>
     <img src="image1.jpg" alt="Image 1"/>
   </SplideSlide>

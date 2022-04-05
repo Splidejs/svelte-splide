@@ -50,13 +50,13 @@
     "typescript": "^4.6.3"
   },
   "type": "module",
-  "dependencies": {
-    "@splidejs/splide": "github:Splidejs/splide"
-  },
   "exports": {
     ".": "./index.js",
     "./css": "./css/splide.min.css",
     "./css/core": "./css/splide-core.min.css",
     "./css/*": "./css/themes/splide-*.min.css"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.0.0"
   }
 }
