@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-50731ba1.js",
+    "file": "start-1f4228ba.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-71ff52dc.js"
+      "_index-607f89bb.js"
     ],
     "dynamicImports": [
       ".svelte-kit/runtime/components/layout.svelte",
@@ -19,37 +19,37 @@
     ]
   },
   ".svelte-kit/runtime/components/layout.svelte": {
-    "file": "layout.svelte-e1aaf72e.js",
+    "file": "layout.svelte-1f10d2ee.js",
     "src": ".svelte-kit/runtime/components/layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-71ff52dc.js"
+      "_index-607f89bb.js"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-9593540d.js",
+    "file": "error.svelte-62b27b8f.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-71ff52dc.js"
+      "_index-607f89bb.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-8b7890d1.js",
+    "file": "pages/index.svelte-5f21cb27.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-71ff52dc.js",
+      "_index-607f89bb.js",
       "src/routes/components/AutoplayExample.svelte",
       "src/routes/components/BasicExample.svelte",
       "src/routes/components/DynamicSlidesExample.svelte",
       "src/routes/components/ReactivityExample.svelte",
       "src/routes/components/ThumbnailsExample.svelte",
       "src/routes/components/VideoExample.svelte",
-      "_SplideSlide-3ecbb5b2.js",
+      "_SplideSlide-52f606a2.js",
       "_generateSlides-2c575ba3.js"
     ],
     "css": [
@@ -57,46 +57,46 @@
     ]
   },
   "src/routes/components/AutoplayExample.svelte": {
-    "file": "pages/components/AutoplayExample.svelte-b257f7e0.js",
+    "file": "pages/components/AutoplayExample.svelte-0a495250.js",
     "src": "src/routes/components/AutoplayExample.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-71ff52dc.js",
-      "_SplideSlide-3ecbb5b2.js",
+      "_index-607f89bb.js",
+      "_SplideSlide-52f606a2.js",
       "_generateSlides-2c575ba3.js"
     ]
   },
   "src/routes/components/BasicExample.svelte": {
-    "file": "pages/components/BasicExample.svelte-f73fa72f.js",
+    "file": "pages/components/BasicExample.svelte-18dae99f.js",
     "src": "src/routes/components/BasicExample.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-71ff52dc.js",
-      "_SplideSlide-3ecbb5b2.js",
+      "_index-607f89bb.js",
+      "_SplideSlide-52f606a2.js",
       "_generateSlides-2c575ba3.js"
     ]
   },
   "src/routes/components/DynamicSlidesExample.svelte": {
-    "file": "pages/components/DynamicSlidesExample.svelte-c7013b19.js",
+    "file": "pages/components/DynamicSlidesExample.svelte-e9f150c3.js",
     "src": "src/routes/components/DynamicSlidesExample.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-71ff52dc.js",
-      "_SplideSlide-3ecbb5b2.js",
+      "_index-607f89bb.js",
+      "_SplideSlide-52f606a2.js",
       "_generateSlides-2c575ba3.js"
     ]
   },
   "src/routes/components/ReactivityExample.svelte": {
-    "file": "pages/components/ReactivityExample.svelte-0e47d2b2.js",
+    "file": "pages/components/ReactivityExample.svelte-550b01b2.js",
     "src": "src/routes/components/ReactivityExample.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-71ff52dc.js",
-      "_SplideSlide-3ecbb5b2.js",
+      "_index-607f89bb.js",
+      "_SplideSlide-52f606a2.js",
       "_generateSlides-2c575ba3.js"
     ],
     "css": [
@@ -104,36 +104,36 @@
     ]
   },
   "src/routes/components/ThumbnailsExample.svelte": {
-    "file": "pages/components/ThumbnailsExample.svelte-d9784f48.js",
+    "file": "pages/components/ThumbnailsExample.svelte-845165fc.js",
     "src": "src/routes/components/ThumbnailsExample.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-71ff52dc.js",
-      "_SplideSlide-3ecbb5b2.js",
+      "_index-607f89bb.js",
+      "_SplideSlide-52f606a2.js",
       "_generateSlides-2c575ba3.js"
     ]
   },
   "src/routes/components/VideoExample.svelte": {
-    "file": "pages/components/VideoExample.svelte-4b7802c0.js",
+    "file": "pages/components/VideoExample.svelte-41727a6f.js",
     "src": "src/routes/components/VideoExample.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-71ff52dc.js",
-      "_SplideSlide-3ecbb5b2.js"
+      "_index-607f89bb.js",
+      "_SplideSlide-52f606a2.js"
     ],
     "css": [
       "assets/pages/components/VideoExample.svelte-10ba73f4.css"
     ]
   },
-  "_index-71ff52dc.js": {
-    "file": "chunks/index-71ff52dc.js"
+  "_index-607f89bb.js": {
+    "file": "chunks/index-607f89bb.js"
   },
-  "_SplideSlide-3ecbb5b2.js": {
-    "file": "chunks/SplideSlide-3ecbb5b2.js",
+  "_SplideSlide-52f606a2.js": {
+    "file": "chunks/SplideSlide-52f606a2.js",
     "imports": [
-      "_index-71ff52dc.js"
+      "_index-607f89bb.js"
     ]
   },
   "_generateSlides-2c575ba3.js": {
