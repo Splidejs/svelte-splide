@@ -8,15 +8,15 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
-    floc   : true,
-    appDir : 'app',
-    adapter: adapter(),
-    paths  : {
+    floc     : true,
+    appDir   : 'app',
+    adapter  : adapter( {
+      fallback: '200.html', // dummy
+    } ),
+    paths    : {
       base: dev ? '' : '/svelte-splide',
     },
-    prerender: {
-      default: true,
-    },
+    prerender: { entries: [] },
   },
 };
 

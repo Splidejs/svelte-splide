@@ -10,21 +10,21 @@
     "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.21",
+    "@sveltejs/adapter-static": "^1.0.0-next.41",
     "@sveltejs/kit": "next",
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0",
-    "eslint": "^8.12.0",
-    "eslint-plugin-svelte3": "^3.4.1",
-    "svelte": "^3.46.6",
-    "svelte-check": "^2.4.6",
-    "svelte-preprocess": "^4.10.5",
-    "tslib": "^2.3.1",
-    "typescript": "^4.6.3"
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "svelte": "^3.49.0",
+    "svelte-check": "^2.9.0",
+    "svelte-preprocess": "^4.10.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
   },
   "type": "module",
   "dependencies": {
-    "@splidejs/splide-extension-video": "^0.7.0",
+    "@splidejs/splide-extension-video": "^0.7.1",
     "@splidejs/svelte-splide": "file:../package"
   }
 }
