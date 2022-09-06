@@ -1,6 +1,6 @@
 {
   "name": "@splidejs/svelte-splide",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Svelte component for the Splide slider/carousel.",
   "author": "Naotoshi Fujita",
   "license": "MIT",
@@ -32,17 +32,17 @@
     "deploy": "gh-pages -d examples/build"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.41",
+    "@sveltejs/adapter-static": "^1.0.0-next.42",
     "@sveltejs/kit": "next",
     "@types/jest": "^29.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.23.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "fs-extra": "^10.1.0",
     "gh-pages": "^4.0.0",
-    "jest": "^29.0.1",
-    "svelte": "^3.49.0",
+    "jest": "next",
+    "svelte": "^3.50.0",
     "svelte-check": "^2.9.0",
     "svelte-preprocess": "^4.10.7",
     "svelte2tsx": "^0.5.16",
@@ -57,6 +57,6 @@
     "./css/*": "./css/themes/splide-*.min.css"
   },
   "dependencies": {
-    "@splidejs/splide": "^4.0.7"
+    "@splidejs/splide": "^4.0.16"
   }
 }
