@@ -24,7 +24,7 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "package": "node scripts/copy-css.js && svelte-kit package",
+    "package": "node scripts/copy-css.js && svelte-package -o package",
     "preview": "svelte-kit preview --port 3030",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -34,6 +34,7 @@
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.42",
     "@sveltejs/kit": "next",
+    "@sveltejs/package": "^2.0.0",
     "@types/jest": "^29.0.0",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
@@ -51,12 +52,175 @@
   },
   "type": "module",
   "exports": {
-    ".": "./index.js",
+    "./package.json": "./package.json",
+    ".": "./package/index.js",
     "./css": "./css/splide.min.css",
     "./css/core": "./css/splide-core.min.css",
-    "./css/*": "./css/themes/splide-*.min.css"
+    "./css/*": "./css/themes/splide-*.min.css",
+    "./components/Splide/Splide.svelte": {
+      "types": "./package/components/Splide/Splide.svelte.d.ts",
+      "svelte": "./package/components/Splide/Splide.svelte",
+      "default": "./package/components/Splide/Splide.svelte"
+    },
+    "./components/Splide/bind": {
+      "types": "./package/components/Splide/bind.d.ts",
+      "default": "./package/components/Splide/bind.js"
+    },
+    "./components/SplideSlide/SplideSlide.svelte": {
+      "types": "./package/components/SplideSlide/SplideSlide.svelte.d.ts",
+      "svelte": "./package/components/SplideSlide/SplideSlide.svelte",
+      "default": "./package/components/SplideSlide/SplideSlide.svelte"
+    },
+    "./components/SplideTrack/SplideTrack.svelte": {
+      "types": "./package/components/SplideTrack/SplideTrack.svelte.d.ts",
+      "svelte": "./package/components/SplideTrack/SplideTrack.svelte",
+      "default": "./package/components/SplideTrack/SplideTrack.svelte"
+    },
+    "./components": {
+      "types": "./package/components/index.d.ts",
+      "svelte": "./package/components/index.js",
+      "default": "./package/components/index.js"
+    },
+    "./css/splide-core.min.css": "./package/css/splide-core.min.css",
+    "./css/splide.min.css": "./package/css/splide.min.css",
+    "./css/themes/splide-default.min.css": "./package/css/themes/splide-default.min.css",
+    "./css/themes/splide-sea-green.min.css": "./package/css/themes/splide-sea-green.min.css",
+    "./css/themes/splide-skyblue.min.css": "./package/css/themes/splide-skyblue.min.css",
+    "./types/events": {
+      "types": "./package/types/events.d.ts",
+      "default": "./package/types/events.js"
+    },
+    "./types": {
+      "types": "./package/types/index.d.ts",
+      "svelte": "./package/types/index.js",
+      "default": "./package/types/index.js"
+    },
+    "./utils/classNames/classNames": {
+      "types": "./package/utils/classNames/classNames.d.ts",
+      "default": "./package/utils/classNames/classNames.js"
+    },
+    "./utils/forOwn/forOwn": {
+      "types": "./package/utils/forOwn/forOwn.d.ts",
+      "default": "./package/utils/forOwn/forOwn.js"
+    },
+    "./utils/forOwn/test/forOwn.test": {
+      "types": "./package/utils/forOwn/test/forOwn.test.d.ts",
+      "default": "./package/utils/forOwn/test/forOwn.test.js"
+    },
+    "./utils/getSlides/getSlides": {
+      "types": "./package/utils/getSlides/getSlides.d.ts",
+      "default": "./package/utils/getSlides/getSlides.js"
+    },
+    "./utils": {
+      "types": "./package/utils/index.d.ts",
+      "svelte": "./package/utils/index.js",
+      "default": "./package/utils/index.js"
+    },
+    "./utils/isEqualDeep/isEqualDeep": {
+      "types": "./package/utils/isEqualDeep/isEqualDeep.d.ts",
+      "default": "./package/utils/isEqualDeep/isEqualDeep.js"
+    },
+    "./utils/isEqualDeep/test/isEqualDeep.test": {
+      "types": "./package/utils/isEqualDeep/test/isEqualDeep.test.d.ts",
+      "default": "./package/utils/isEqualDeep/test/isEqualDeep.test.js"
+    },
+    "./utils/isEqualShallow/isEqualShallow": {
+      "types": "./package/utils/isEqualShallow/isEqualShallow.d.ts",
+      "default": "./package/utils/isEqualShallow/isEqualShallow.js"
+    },
+    "./utils/isEqualShallow/test/isEqualShallow.test": {
+      "types": "./package/utils/isEqualShallow/test/isEqualShallow.test.d.ts",
+      "default": "./package/utils/isEqualShallow/test/isEqualShallow.test.js"
+    },
+    "./utils/isObject/isObject": {
+      "types": "./package/utils/isObject/isObject.d.ts",
+      "default": "./package/utils/isObject/isObject.js"
+    },
+    "./utils/isObject/test/isObject.test": {
+      "types": "./package/utils/isObject/test/isObject.test.d.ts",
+      "default": "./package/utils/isObject/test/isObject.test.js"
+    },
+    "./utils/merge/merge.test": {
+      "types": "./package/utils/merge/merge.test.d.ts",
+      "default": "./package/utils/merge/merge.test.js"
+    },
+    "./utils/merge/merge": {
+      "types": "./package/utils/merge/merge.d.ts",
+      "default": "./package/utils/merge/merge.js"
+    }
   },
   "dependencies": {
     "@splidejs/splide": "^4.1.3"
+  },
+  "files": [
+    "package"
+  ],
+  "svelte": "./package/index.js",
+  "typesVersions": {
+    ">4.0": {
+      "components/Splide/Splide.svelte": [
+        "./package/components/Splide/Splide.svelte.d.ts"
+      ],
+      "components/Splide/bind": [
+        "./package/components/Splide/bind.d.ts"
+      ],
+      "components/SplideSlide/SplideSlide.svelte": [
+        "./package/components/SplideSlide/SplideSlide.svelte.d.ts"
+      ],
+      "components/SplideTrack/SplideTrack.svelte": [
+        "./package/components/SplideTrack/SplideTrack.svelte.d.ts"
+      ],
+      "components": [
+        "./package/components/index.d.ts"
+      ],
+      "index.d.ts": [
+        "./package/index.d.ts"
+      ],
+      "types/events": [
+        "./package/types/events.d.ts"
+      ],
+      "types": [
+        "./package/types/index.d.ts"
+      ],
+      "utils/classNames/classNames": [
+        "./package/utils/classNames/classNames.d.ts"
+      ],
+      "utils/forOwn/forOwn": [
+        "./package/utils/forOwn/forOwn.d.ts"
+      ],
+      "utils/forOwn/test/forOwn.test": [
+        "./package/utils/forOwn/test/forOwn.test.d.ts"
+      ],
+      "utils/getSlides/getSlides": [
+        "./package/utils/getSlides/getSlides.d.ts"
+      ],
+      "utils": [
+        "./package/utils/index.d.ts"
+      ],
+      "utils/isEqualDeep/isEqualDeep": [
+        "./package/utils/isEqualDeep/isEqualDeep.d.ts"
+      ],
+      "utils/isEqualDeep/test/isEqualDeep.test": [
+        "./package/utils/isEqualDeep/test/isEqualDeep.test.d.ts"
+      ],
+      "utils/isEqualShallow/isEqualShallow": [
+        "./package/utils/isEqualShallow/isEqualShallow.d.ts"
+      ],
+      "utils/isEqualShallow/test/isEqualShallow.test": [
+        "./package/utils/isEqualShallow/test/isEqualShallow.test.d.ts"
+      ],
+      "utils/isObject/isObject": [
+        "./package/utils/isObject/isObject.d.ts"
+      ],
+      "utils/isObject/test/isObject.test": [
+        "./package/utils/isObject/test/isObject.test.d.ts"
+      ],
+      "utils/merge/merge.test": [
+        "./package/utils/merge/merge.test.d.ts"
+      ],
+      "utils/merge/merge": [
+        "./package/utils/merge/merge.d.ts"
+      ]
+    }
   }
 }
